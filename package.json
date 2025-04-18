@@ -1,0 +1,33 @@
+{
+  "name": "@think-storm/contracts",
+  "version": "1.0.0",
+  "description": "Transfert Objects between Backend and Frontend",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "exit 0",
+    "build": "npx tsc"
+  },
+  "publishConfig": {
+    "think-storm:registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Think-Storm/Contracts.git"
+  },
+  "author": "Harian-Elyoth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Think-Storm/Contracts/issues"
+  },
+  "homepage": "https://github.com/Think-Storm/Contracts#readme",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@types/node": "^22.14.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "reflect-metadata": "^0.2.1"
+  }
+}
