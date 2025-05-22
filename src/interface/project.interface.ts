@@ -62,3 +62,11 @@ export interface SearchProject {
   limit?: number;
   sort?: string;
 }
+
+export interface SearchProjectResponse {
+  projects: ProjectResponse[];
+  page: number;
+  totalPages: number;
+  totalItems: number;
+  limit: number;
+}

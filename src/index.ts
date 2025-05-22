@@ -23,6 +23,7 @@ export {
      ProjectResponse,
      SearchProject,
      GetProject,
+     SearchProjectResponse,
  } from './interface/project.interface';
 
 // Newsletter
