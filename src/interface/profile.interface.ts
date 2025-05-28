@@ -4,7 +4,7 @@ import { UserRole } from '../common/types/user.types';
 export interface CreateProfile {
   avatar?: string;
   bio?: string;
-  preferred_role?: string;
+  preferred_role?: string[];
   location?: string;
   website?: string;
   domain_labels?: string[];
@@ -17,7 +17,7 @@ export interface ProfileResponse {
   userId: number;
   avatar?: string;
   bio?: string;
-  preferred_role?: UserRole;
+  preferred_role?: UserRole[];
   location?: string;
   website?: string;
   domain_labels?: string[];
