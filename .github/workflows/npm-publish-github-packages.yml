@@ -1,9 +1,8 @@
 name: My package with contracts
 
 on:
-  push:
-    branches:
-      - master
+  release:
+    types: [created]
 
 jobs:
   build:
@@ -15,7 +14,6 @@ jobs:
           node-version: 18
       - run: npm ci
       - run: npm run build
-      - run: npm test
 
   publish-gpr:
     needs: build
@@ -35,17 +33,15 @@ jobs:
         run: |
           git config --global user.name 'Harian Elyoth'
           git config --global user.email 'harian.elyoth@gmail.com'
-      - name: Bump version
-        run: npm version patch --no-git-tag-version
-      - name: Get version
-        id: get_version
-        run: echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
-      - name: Commit version bump
+      - name: Update version from release
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/v}
+          npm version $VERSION --no-git-tag-version
+      - name: Commit version update
         run: |
           git add package.json
-          git commit -m "Bump version to ${{ steps.get_version.outputs.VERSION }}"
-          git tag "v${{ steps.get_version.outputs.VERSION }}"
-          git push origin master --tags
+          git commit -m "Update version to ${{ github.ref_name }}"
+          git push origin master
       - run: npm ci
       - run: npm run build
       - run: npm publish --access public
