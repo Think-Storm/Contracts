@@ -70,3 +70,10 @@ export interface SearchProjectResponse {
   totalItems: number;
   limit: number;
 }
+
+export interface ProjectJoinRequest {
+  userId: number;
+  projectId: number;
+  roleName: string;
+  message?: string;
+}
