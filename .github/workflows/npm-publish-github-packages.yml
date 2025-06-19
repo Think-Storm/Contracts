@@ -3,6 +3,7 @@ name: My package with contracts
 on:
   release:
     types: [created]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -29,19 +30,6 @@ jobs:
         with:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
-      - name: Configure Git
-        run: |
-          git config --global user.name 'Harian Elyoth'
-          git config --global user.email 'harian.elyoth@gmail.com'
-      - name: Update version from release
-        run: |
-          VERSION=${GITHUB_REF#refs/tags/v}
-          npm version $VERSION --no-git-tag-version
-      - name: Commit version update
-        run: |
-          git add package.json
-          git commit -m "Update version to ${{ github.ref_name }}"
-          git push origin master
       - run: npm ci
       - run: npm run build
       - run: npm publish --access public

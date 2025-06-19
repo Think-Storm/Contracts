@@ -24,6 +24,7 @@ export {
      SearchProject,
      GetProject,
      SearchProjectResponse,
+     ProjectJoinRequest,
  } from './interface/project.interface';
 
 // Newsletter
