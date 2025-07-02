@@ -55,11 +55,6 @@ export { isEnum } from './common/helpers/enum';
 export { parseEnum } from './common/helpers/enum';
 export { stringToEnum } from './common/helpers/enum';
 
-// Decorators
-
-export { IsBeforeDate } from './common/decorator/isBeforeDate';
-export { IsAfterDate } from './common/decorator/isAfterDate';
-
 // Constants
 export { PaginationDefault } from './common/consts';
 export { SortDefault } from './common/consts';
