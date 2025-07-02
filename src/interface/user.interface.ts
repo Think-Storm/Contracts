@@ -1,3 +1,5 @@
+import { Project } from "../common/types/project.types";
+
 export interface UpdateUser {
     id: number;
     username: string;
@@ -18,4 +20,5 @@ export interface UserResponse {
     passwordChangedAt?: Date;
     createdAt: Date;
     lastUpdatedAt: Date;
+    savedProjects?: Project[];
 }
