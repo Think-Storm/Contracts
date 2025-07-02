@@ -66,6 +66,10 @@ export { SortDefault } from './common/consts';
 
 // Types
 
+// Data
+export { DomainLabel } from './common/types/data.types';
+export { TechnicalLabel } from './common/types/data.types';
+
 // Project
 export { Goal } from './common/types/project.types';
 export { ProjectStatus } from './common/types/project.types';
