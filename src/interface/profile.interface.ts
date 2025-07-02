@@ -10,6 +10,8 @@ export interface CreateProfile {
     domain_labels?: string[];
     languages?: LanguageCode[];
     technical_labels?: string[];
+    fullName?: string;
+    birthdate?: Date;
 }
 
 export interface ProfileResponse {
@@ -25,4 +27,6 @@ export interface ProfileResponse {
     technical_labels?: string[];
     createdAt: Date;
     lastUpdatedAt: Date;
+    fullName?: string;
+    birthdate?: Date;
 }
