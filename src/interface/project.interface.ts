@@ -80,6 +80,7 @@ export interface JoinRequestResponse {
     userId: number;
     projectId: number;
     roleName: string;
+    status: string;
     message?: string;
 }
 
