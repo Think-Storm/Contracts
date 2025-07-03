@@ -1,4 +1,4 @@
-import { Language } from "./language.types";
+import { Language, LanguageCode } from "./language.types";
 import { User } from "./user.types";
 
 export enum ProjectStatus {
@@ -26,16 +26,10 @@ export type Project = {
     founderId: number;
     title: string;
     description?: string;
-    technicalLabels?: string[];
-    domainLabels?: string[];
     goal: Goal;
     status: ProjectStatus;
-    language: Language;
+    languageCode: LanguageCode;
     milestone?: Date;
     createdAt: Date;
     lastUpdatedAt: Date;
-    users: User[];
-    founder: User;
-    joinRequest?: User[];
-    savedByUsers?: User[];
 };
