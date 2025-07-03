@@ -14,6 +14,19 @@ export interface CreateProfile {
     birthdate?: Date;
 }
 
+export interface UpdateProfile {
+    avatar?: string;
+    bio?: string;
+    preferred_role?: UserRole[];
+    location?: string;
+    website?: string;
+    domain_labels?: string[];
+    languages?: LanguageCode[];
+    technical_labels?: string[];
+    fullName?: string;
+    birthdate?: Date;
+}
+
 export interface ProfileResponse {
     id: number;
     userId: number;
