@@ -1,4 +1,5 @@
 import "reflect-metadata";
+import { LanguageResponse } from "./interface/common-data.interface";
 
 // Auth
 
@@ -33,6 +34,7 @@ export { CreateNotification, SetNotificationRead, NotificationResponse } from ".
 export { CreateProfile, ProfileResponse } from "./interface/profile.interface";
 
 // Common
+export { LanguageResponse } from "./interface/common-data.interface";
 
 // Helpers
 export { assertEnum } from "./common/helpers/enum";
