@@ -23,6 +23,7 @@ export enum JoinRequestStatus {
 
 export type Project = {
     id: number;
+    founderId: number;
     title: string;
     description?: string;
     technicalLabels?: string[];
