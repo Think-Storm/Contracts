@@ -7,7 +7,7 @@
   "scripts": {
     "test": "exit 0",
     "build": "npx tsc",
-    "lint": "eslint ."
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --quiet"
   },
   "publishConfig": {
     "think-storm:registry": "https://npm.pkg.github.com/"
