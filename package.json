@@ -24,7 +24,8 @@
   "homepage": "https://github.com/Think-Storm/Contracts#readme",
   "devDependencies": {
     "eslint": "^9.32.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.39.0"
   },
   "dependencies": {
     "@types/node": "^22.14.1",
