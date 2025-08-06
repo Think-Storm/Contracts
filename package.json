@@ -2,6 +2,7 @@
   "name": "@think-storm/contracts",
   "version": "1.0.15",
   "description": "Transfert Objects between Backend and Frontend",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
