@@ -1,5 +1,5 @@
 import { Goal, ProjectStatus } from "../common/types/project.types";
-import { Language, LanguageCode } from "../common/types/language.types";
+import { LanguageName } from "../common/types/language.types";
 import { User } from "../common/types/user.types";
 
 export interface CreateProject {
@@ -10,7 +10,7 @@ export interface CreateProject {
     domainLabels?: string[];
     goal: Goal;
     status: ProjectStatus;
-    languageCode: LanguageCode;
+    languageName: LanguageName;
     milestone?: Date;
 }
 
@@ -22,7 +22,7 @@ export interface UpdateProject {
     technicalLabels: string[];
     domainLabels: string[];
     status: ProjectStatus;
-    languageCode: LanguageCode;
+    languageName: LanguageName;
     milestone: Date;
     goal?: Goal;
 }
@@ -35,7 +35,7 @@ export interface ProjectResponse {
     domainLabels?: string[];
     goal: Goal;
     status: ProjectStatus;
-    language: Language;
+    languageName: LanguageName;
     milestone?: Date;
     createdAt: Date;
     lastUpdatedAt: Date;
@@ -50,12 +50,13 @@ export interface GetProject {
 }
 
 export interface SearchProject {
+    searchQuery?: string;
     title?: string;
     description?: string;
     technicalLabels?: string;
     domainLabels?: string;
     status?: ProjectStatus;
-    languageCode?: LanguageCode;
+    LanguageName?: LanguageName;
     goal?: Goal;
     milestoneFrom?: Date;
     milestoneTo?: Date;
