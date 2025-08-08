@@ -1,4 +1,4 @@
-import { LanguageCode } from "../common/types/language.types";
+import { LanguageName } from "../common/types/language.types";
 import { UserRole } from "../common/types/user.types";
 
 export interface CreateProfile {
@@ -8,7 +8,7 @@ export interface CreateProfile {
     location?: string;
     website?: string;
     domain_labels?: string[];
-    languages?: LanguageCode[];
+    languages?: LanguageName[];
     technical_labels?: string[];
     fullName?: string;
     birthdate?: Date;
@@ -21,7 +21,7 @@ export interface UpdateProfile {
     location?: string;
     website?: string;
     domain_labels?: string[];
-    languages?: LanguageCode[];
+    languages?: LanguageName[];
     technical_labels?: string[];
     fullName?: string;
     birthdate?: Date;
@@ -36,7 +36,7 @@ export interface ProfileResponse {
     location?: string;
     website?: string;
     domain_labels?: string[];
-    languages?: LanguageCode[];
+    languages?: LanguageName[];
     technical_labels?: string[];
     createdAt: Date;
     lastUpdatedAt: Date;

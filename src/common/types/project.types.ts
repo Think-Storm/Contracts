@@ -1,5 +1,4 @@
-import { Language, LanguageCode } from "./language.types";
-import { User } from "./user.types";
+import { LanguageName } from "./language.types";
 
 export enum ProjectStatus {
     Complete = "Complete",
@@ -28,7 +27,7 @@ export type Project = {
     description?: string;
     goal: Goal;
     status: ProjectStatus;
-    languageCode: LanguageCode;
+    languageName: LanguageName;
     milestone?: Date;
     createdAt: Date;
     lastUpdatedAt: Date;
