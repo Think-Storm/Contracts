@@ -2,44 +2,44 @@ import { LanguageName } from "../common/types/language.types";
 import { UserRole } from "../common/types/user.types";
 
 export interface CreateProfile {
-    avatar?: string;
-    bio?: string;
-    preferred_role?: UserRole[];
-    location?: string;
-    website?: string;
-    domain_labels?: string[];
-    languages?: LanguageName[];
-    technical_labels?: string[];
-    fullName?: string;
-    birthdate?: Date;
+  avatar?: string;
+  bio?: string;
+  preferred_role?: UserRole[];
+  location?: string;
+  website?: string[];
+  domain_labels?: string[];
+  languages?: LanguageName[];
+  technical_labels?: string[];
+  fullName?: string;
+  birthdate?: Date;
 }
 
 export interface UpdateProfile {
-    avatar?: string;
-    bio?: string;
-    preferred_role?: UserRole[];
-    location?: string;
-    website?: string;
-    domain_labels?: string[];
-    languages?: LanguageName[];
-    technical_labels?: string[];
-    fullName?: string;
-    birthdate?: Date;
+  avatar?: string;
+  bio?: string;
+  preferred_role?: UserRole[];
+  location?: string;
+  website?: string[];
+  domain_labels?: string[];
+  languages?: LanguageName[];
+  technical_labels?: string[];
+  fullName?: string;
+  birthdate?: Date;
 }
 
 export interface ProfileResponse {
-    id: number;
-    userId: number;
-    avatar?: string;
-    bio?: string;
-    preferred_role?: UserRole[];
-    location?: string;
-    website?: string;
-    domain_labels?: string[];
-    languages?: LanguageName[];
-    technical_labels?: string[];
-    createdAt: Date;
-    lastUpdatedAt: Date;
-    fullName?: string;
-    birthdate?: Date;
+  id: number;
+  userId: number;
+  avatar?: string;
+  bio?: string;
+  preferred_role?: UserRole[];
+  location?: string;
+  website?: string[];
+  domain_labels?: string[];
+  languages?: LanguageName[];
+  technical_labels?: string[];
+  createdAt: Date;
+  lastUpdatedAt: Date;
+  fullName?: string;
+  birthdate?: Date;
 }
