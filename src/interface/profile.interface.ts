@@ -6,6 +6,8 @@ export interface CreateProfile {
   bio?: string;
   preferred_role?: UserRole[];
   location?: string;
+  timezone?: string;
+  websiteType?: string[];
   website?: string[];
   domain_labels?: string[];
   languages?: LanguageName[];
@@ -19,6 +21,8 @@ export interface UpdateProfile {
   bio?: string;
   preferred_role?: UserRole[];
   location?: string;
+  timezone?: string;
+  websiteType?: string[];
   website?: string[];
   domain_labels?: string[];
   languages?: LanguageName[];
@@ -34,6 +38,8 @@ export interface ProfileResponse {
   bio?: string;
   preferred_role?: UserRole[];
   location?: string;
+  timezone?: string;
+  websiteType?: string[];
   website?: string[];
   domain_labels?: string[];
   languages?: LanguageName[];
