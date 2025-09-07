@@ -4,14 +4,14 @@ import { UserRole } from "../common/types/user.types";
 export interface CreateProfile {
   avatar?: string;
   bio?: string;
-  preferred_role?: UserRole[];
+  preferredRole?: UserRole[];
   location?: string;
   timezone?: string;
   websiteType?: string[];
   website?: string[];
-  domain_labels?: string[];
+  domainLabels?: string[];
   languages?: LanguageName[];
-  technical_labels?: string[];
+  technicalLabels?: string[];
   fullName?: string;
   birthdate?: Date;
 }
@@ -19,14 +19,14 @@ export interface CreateProfile {
 export interface UpdateProfile {
   avatar?: string;
   bio?: string;
-  preferred_role?: UserRole[];
+  preferredRole?: UserRole[];
   location?: string;
   timezone?: string;
   websiteType?: string[];
   website?: string[];
-  domain_labels?: string[];
+  domainLabels?: string[];
   languages?: LanguageName[];
-  technical_labels?: string[];
+  technicalLabels?: string[];
   fullName?: string;
   birthdate?: Date;
 }
@@ -36,14 +36,14 @@ export interface ProfileResponse {
   userId: number;
   avatar?: string;
   bio?: string;
-  preferred_role?: UserRole[];
+  preferredRole?: UserRole[];
   location?: string;
   timezone?: string;
   websiteType?: string[];
   website?: string[];
-  domain_labels?: string[];
+  domainLabels?: string[];
   languages?: LanguageName[];
-  technical_labels?: string[];
+  technicalLabels?: string[];
   createdAt: Date;
   lastUpdatedAt: Date;
   fullName?: string;
