@@ -1,5 +1,7 @@
 import "reflect-metadata";
 import { LanguageResponse } from "./interface/common-data.interface";
+import { Language } from "./../dist/common/types/language.types.d";
+import { JoinRequestStatus } from "./common/types/project.types";
 
 // Auth
 
@@ -74,6 +76,11 @@ export { Goal } from "./common/types/project.types";
 export { ProjectStatus } from "./common/types/project.types";
 export { JoinRequestStatus } from "./common/types/project.types";
 export { Project } from "./common/types/project.types";
+export { Involvement } from "./common/types/project.types";
+export { JoinRequest } from "./common/types/project.types";
+export { Like } from "./common/types/project.types";
+export { ProjectDomainLabel } from "./common/types/project.types";
+export { ProjectTechnicalLabel } from "./common/types/project.types";
 
 // Language
 export { LanguageCode } from "./common/types/language.types";
