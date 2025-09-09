@@ -3,32 +3,49 @@ import { LanguageResponse } from "./interface/common-data.interface";
 
 // Auth
 
-export { LoginUser, RegisterUser, UpdatePassword, ForgotPassword } from "./interface/auth.interface";
+export {
+  LoginUser,
+  RegisterUser,
+  ForgotUpdatePassword,
+  UpdatePassword,
+  ForgotPassword,
+} from "./interface/auth.interface";
 
 // User
 
-export { CreateUser, UpdateUser, UserResponse } from "./interface/user.interface";
+export {
+  CreateUser,
+  UpdateUser,
+  UserResponse,
+} from "./interface/user.interface";
 
 // Project
 
 export {
-    CreateProject,
-    UpdateProject,
-    GetProject,
-    ProjectResponse,
-    SearchProject,
-    JoinRequestResponse,
-    SearchProjectResponse,
-    CreateJoinRequest,
-    Saveproject,
+  CreateProject,
+  UpdateProject,
+  GetProject,
+  ProjectResponse,
+  SearchProject,
+  JoinRequestResponse,
+  SearchProjectResponse,
+  CreateJoinRequest,
+  Saveproject,
 } from "./interface/project.interface";
 
 // Newsletter
 
-export { CreateNewsletterSubscription, NewsletterSubscriptionResponse } from "./interface/newsletter.interface";
+export {
+  CreateNewsletterSubscription,
+  NewsletterSubscriptionResponse,
+} from "./interface/newsletter.interface";
 
 // Notification
-export { CreateNotification, SetNotificationRead, NotificationResponse } from "./interface/notification.interface";
+export {
+  CreateNotification,
+  SetNotificationRead,
+  NotificationResponse,
+} from "./interface/notification.interface";
 
 // Profile
 export { CreateProfile, ProfileResponse } from "./interface/profile.interface";
