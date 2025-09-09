@@ -16,7 +16,9 @@ export interface ForgotUpdatePassword {
 }
 
 export interface UpdatePassword {
+  currentPassword: string;
   password: string;
+  confirmPassword: string;
 }
 
 export interface ForgotPassword {

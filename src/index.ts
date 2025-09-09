@@ -86,3 +86,10 @@ export { UserRole } from "./common/types/user.types";
 
 // Notification
 export { NotificationType } from "./common/types/notification.types";
+export { Notification } from "./common/types/notification.types";
+
+// Newsletter
+export { NewsletterSubscription } from "./common/types/newsletter.types";
+
+// Profile
+export { UserProfile } from "./common/types/profile.types";
