@@ -1,7 +1,4 @@
 import "reflect-metadata";
-import { LanguageResponse } from "./interface/common-data.interface";
-import { Language } from "./../dist/common/types/language.types.d";
-import { JoinRequestStatus } from "./common/types/project.types";
 
 // Auth
 
