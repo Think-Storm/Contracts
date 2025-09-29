@@ -10,7 +10,6 @@ export interface RegisterUser {
 }
 
 export interface ForgotUpdatePassword {
-  email: string;
   password: string;
   passwordResetToken: string;
 }
