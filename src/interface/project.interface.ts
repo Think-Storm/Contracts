@@ -1,4 +1,4 @@
-import { Goal, ProjectStatus } from "../common/types/project.types";
+import { Goal, ProjectStatus, JoinRequestStatus } from "../common/types/project.types";
 import { LanguageName } from "../common/types/language.types";
 import { User } from "../common/types/user.types";
 
@@ -90,6 +90,15 @@ export interface CreateJoinRequest {
     message?: string;
 }
 
+export interface UpdateJoinRequest {
+    status: JoinRequestStatus;
+}
+
 export interface Saveproject {
     saved_by_users?: number[];
+}
+
+export interface LikeProject {
+    userId: number;
+    projectId: number;
 }
