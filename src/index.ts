@@ -30,6 +30,7 @@ export {
   SearchProjectResponse,
   CreateJoinRequest,
   Saveproject,
+  LikeProjectResponse,
 } from "./interface/project.interface";
 
 // Newsletter

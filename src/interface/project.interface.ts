@@ -43,6 +43,7 @@ export interface ProjectResponse {
     founder: User;
     joinRequest?: User[];
     savedByUsers?: User[];
+    likeCount?: number;
 }
 
 export interface GetProject {
@@ -92,4 +93,9 @@ export interface CreateJoinRequest {
 
 export interface Saveproject {
     saved_by_users?: number[];
+}
+
+export interface LikeProjectResponse {
+    userId: number;
+    projectId: number;
 }
