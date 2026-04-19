@@ -29,7 +29,9 @@ export {
   JoinRequestResponse,
   SearchProjectResponse,
   CreateJoinRequest,
+  UpdateJoinRequest,
   Saveproject,
+  LikeProject,
 } from "./interface/project.interface";
 
 // Newsletter
