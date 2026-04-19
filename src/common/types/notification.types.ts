@@ -1,6 +1,7 @@
 export enum NotificationType {
   JoinRequest = "JoinRequest",
   AcceptJoinRequest = "AcceptJoinRequest",
+  RejectJoinRequest = "RejectJoinRequest",
   InviteToProject = "InviteToProject",
   Welcome = "Welcome",
 }
